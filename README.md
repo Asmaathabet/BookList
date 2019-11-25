@@ -16,4 +16,6 @@ app.use('/graphql',graphqlHTTP({
     graphiql:true
 }));
 ```
+* if you faced problem in caches in git
+`git rm --cached server -f`
 
