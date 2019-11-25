@@ -9,3 +9,11 @@ Setup the app :
 `npm install graphql express-graphql`
 * install Lodash Library to retrieve data and edit on it 
 `npm install lodash`
+* to open Graphiql in `http://localhost:5000/graphql` you should add assign value to true
+```
+app.use('/graphql',graphqlHTTP({
+    schema,
+    graphiql:true
+}));
+```
+
