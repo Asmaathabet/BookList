@@ -19,3 +19,6 @@ app.use('/graphql',graphqlHTTP({
 * if you faced problem in caches in git
 `git rm --cached server -f`
 
+* to install MonogoDB 
+`npm install mongoose`
+
