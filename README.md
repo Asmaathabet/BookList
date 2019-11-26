@@ -22,3 +22,15 @@ app.use('/graphql',graphqlHTTP({
 * to install MonogoDB 
 `npm install mongoose`
 
+* create react app 
+`create react-app client`
+
+* MongoDB website
+`https://cloud.mongodb.com`
+
+* Apolo client website
+` https://www.apollographql.com/docs/react/ `
+
+
+
+
