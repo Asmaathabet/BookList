@@ -1,4 +1,4 @@
-Setup the app : 
+## Setup Server Locally : 
 * `mkdir server`
 * `cd server`
 * `npm init -y`
@@ -16,6 +16,7 @@ app.use('/graphql',graphqlHTTP({
     graphiql:true
 }));
 ```
+### Advices
 * if you faced problem in caches in git
 `git rm --cached server -f`
 
@@ -31,6 +32,8 @@ app.use('/graphql',graphqlHTTP({
 * Apolo client website
 ` https://www.apollographql.com/docs/react/ `
 
+## BookList Image:     
 
+![bookList](https://user-images.githubusercontent.com/29041512/69756806-0d8d7e80-1164-11ea-9214-59a0a97f5bf0.png)
 
 

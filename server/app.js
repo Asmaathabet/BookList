@@ -1,15 +1,18 @@
 const express = require('express'); 
 const graphqlHTTP = require('express-graphql');
+require('dotenv').config();
+
 const schema = require('./schema/schema');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 
+
 // allow cross origin requests
 app.use(cors())
 //connect to mlab - mongoDB
 mongoose
-.connect('mongodb+srv://asmaa:123@cluster0-8kezu.mongodb.net/test?retryWrites=true&w=majority',  {
+.connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PW}@cluster0-8kezu.mongodb.net/test?retryWrites=true&w=majority`,  {
     useUnifiedTopology: true,
     useNewUrlParser: true,
     })
